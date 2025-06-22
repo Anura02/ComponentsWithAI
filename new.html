@@ -1,82 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Modern Navbar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Anu Designs | Modern Web Solutions</title>
   <link rel="stylesheet" href="stylle.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;700&display=swap"
+    rel="stylesheet">
 </head>
-<body>
-  <nav class="navbar">
-    <div class="logo">MySite</div>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Projects</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger">
-      <div class="bar"></div>
-      <div class="bar"></div>
-      <div class="bar"></div>
-    </div>
-  </nav>
 
+<body>
+  <!-- Navbar Section -->
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <span>Anu<span class="accent">Designs</span></span>
+        </div>        <ul class="nav-links" id="navLinks">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact" class="contact-btn">Contact</a></li>
+        </ul>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light theme">
+          <i class="fas fa-sun"></i>
+        </button>
+        <div class="hamburger" id="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
   <section class="hero">
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1>Hello,<br>I'm Anu</h1>
-        <p><em>A passionate web developer crafting beautiful and functional websites with modern tech.</em></p>
-        <a href="#projects" class="hero-btn">View Projects</a>
-      </div>
-      <div class="hero-image">
-        <img src="./hi.jpg" alt="Your Photo">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Design-Driven <span class="gradient-text">Innovation</span></h1>
+          <p>Turning bold ideas into visually striking and user-centric digital experiences that make an impact.</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View Our Work</a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="blob-animation"></div>
+          <img src="Anudesigns.jpg" alt="Digital solutions illustration">
+        </div>
       </div>
     </div>
   </section>
 
-  <footer class="footer">
-  <div class="footer-content">
-    <p>&copy; 2025 MySite. All rights reserved.</p>
-    <div class="social-links">
-      <a href="#" aria-label="Twitter" class="social-icon">
-        <!-- Twitter SVG -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" >
-          <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 
-                   1.014-.611 1.794-1.574 2.163-2.724-.949.555-2.005.959-3.127 1.184-.897-.959-2.178-1.559-3.594-1.559-2.717 0-4.924 2.206-4.924 4.923 0 .39.045.765.127 1.124-4.09-.205-7.719-2.164-10.148-5.144-.424.724-.666 1.562-.666 2.457 0 1.69.861 3.178 2.172 4.05-.801-.025-1.555-.246-2.214-.616v.062c0 2.364 1.68 4.337 3.911 4.784-.41.111-.84.171-1.285.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.416-1.68 1.318-3.809 2.105-6.102 2.105-.398 0-.79-.023-1.175-.067 2.179 1.394 4.768 2.209 7.548 2.209 9.057 0 14.01-7.496 14.01-13.985 0-.21 0-.423-.015-.633.962-.695 1.8-1.562 2.46-2.549z"/>
-        </svg>
-      </a>
-      <a href="#" aria-label="LinkedIn" class="social-icon">
-        <!-- LinkedIn SVG -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" >
-          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.025-3.039-1.851-3.039-1.853 
-                   0-2.136 1.445-2.136 2.939v5.669H9.355V9h3.414v1.561h.047c.476-.9 
-                   1.637-1.851 3.37-1.851 3.602 0 4.268 2.368 4.268 5.455v6.287zM5.337 
-                   7.433a2.07 2.07 0 110-4.139 2.07 2.07 0 010 4.139zm1.777 
-                   13.019H3.56V9h3.554v11.452zM22.225 0H1.771C.792 0 0 
-                   .774 0 1.728v20.543C0 23.226.792 24 1.771 24h20.451c.98 
-                   0 1.778-.774 1.778-1.728V1.728C24 .774 23.205 0 22.225 0z"/>
-        </svg>
-      </a>
-      <a href="#" aria-label="GitHub" class="social-icon">
-        <!-- GitHub SVG -->
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24" >
-          <path d="M12 0C5.37 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 
-                   11.387.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.73.084-.73 
-                   1.205.084 1.84 1.236 1.84 1.236 1.07 1.835 2.809 1.305 3.495.997.108-.776.418-1.305.76-1.605-2.665-.3-5.466-1.335-5.466-5.93 
-                   0-1.31.47-2.38 1.236-3.22-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.5 
-                   11.5 0 013.003-.404c1.02.004 2.045.138 3.003.404 2.29-1.552 3.297-1.23 3.297-1.23.655 1.653.243 
-                   2.873.12 3.176.77.84 1.235 1.91 1.235 3.22 0 4.61-2.807 5.625-5.48 5.92.43.372.823 1.102.823 
-                   2.222 0 1.606-.015 2.896-.015 3.286 0 .32.217.694.825.576C20.565 21.796 24 17.298 24 
-                   12c0-6.627-5.373-12-12-12z"/>
-        </svg>
-      </a>
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What We Do</span>
+        <h2>Our <span class="accent">Services</span></h2>
+        <p>Comprehensive solutions tailored to your business needs</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Web Development</h3>
+          <p>Custom websites built with the latest technologies for optimal performance and user experience.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Responsive Design</h3>
+          <p>Seamless experiences across all devices and screen sizes, from mobile to desktop.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-paint-brush"></i>
+          </div>
+          <h3>UI/UX Design</h3>
+          <p>Beautiful, intuitive interfaces designed with your users in mind for maximum engagement.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Digital Marketing</h3>
+          <p>Strategies to grow your online presence and connect with your target audience.</p>
+        </div>
+      </div>
     </div>
-  </div>
-</footer>
+  </section>
 
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Portfolio</span>
+        <h2>Featured <span class="accent">Projects</span></h2>
+        <p>A showcase of our recent work and successful client collaborations</p>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="ecommerce.jpg" alt="Project 1">
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Modern E-commerce Platform</h3>
+            <p>A fully responsive online store with seamless checkout experience</p>
+            <div class="project-tags">
+              <span>Web Design</span>
+              <span>E-commerce</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="finance.jpg" alt="Project 2">
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Financial Dashboard</h3>
+            <p>Interactive data visualization tools for financial analysis</p>
+            <div class="project-tags">
+              <span>UI/UX</span>
+              <span>Dashboard</span>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-image">
+            <img src="health.jpg" alt="Project 3">
+            <div class="project-overlay">
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Health & Fitness App</h3>
+            <p>Mobile application for tracking workouts and nutrition</p>
+            <div class="project-tags">
+              <span>Mobile App</span>
+              <span>Health</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section-cta">
+        <a href="#contact" class="btn btn-primary">Start Your Project</a>
+      </div>
+    </div>
+  </section>
 
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-image">
+          <img src="Anudesigns.jpg" alt="About AnuDesigns">
+          <div class="about-shape"></div>
+        </div>
+        <div class="about-text">
+          <span class="section-tag">Who We Are</span>
+          <h2>About <span class="accent">AnuDesigns</span></h2>
+          <p>Founded in 2023, AnuDesigns has rapidly emerged as a trusted name in innovative digital solutions. Our talented team of designers, developers, and strategists brings together creativity and technical expertise to craft impactful digital experiences. </p>
+          <p>With a commitment to quality and collaboration, we help brands grow, evolve, and thrive in the digital world.</p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-number">60+</span>
+              <span class="stat-label">Projects Completed</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">50+</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">2+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Client Feedback</span>
+        <h2>What Our <span class="accent">Clients Say</span></h2>
+        <p>Don't just take our word for it</p>
+      </div>
+      <div class="testimonials-slider">
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+          <p class="testimonial-text">"Working with AnuDesigns was a game-changer. Their vision, execution, and attention to detail turned our scattered ideas into a stunning digital presence. Truly outstanding!""</p>
+          <div class="testimonial-author">
+            <img src="ooo.jpg" alt="Hannah Kim">
+            <div class="author-info">
+              <h4>Hannah Kim  </h4>
+              <p>Creative Lead, Elevate Agency</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="quote-icon"><i class="fas fa-quote-right"></i></div>
+          <p class="testimonial-text">"From day one, we felt heard, understood, and inspired. AnuDesigns brought our brand to life in a way we never imagined possible."</p>
+          <div class="testimonial-author">
+            <img src="hi.jpg" alt="Jessica Alvarez">
+            <div class="author-info">
+              <h4>Jessica Alvarez</h4>
+              <p>CEO, GreenEdge Tech</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-content">
+        <div class="contact-info">
+          <span class="section-tag">Get In Touch</span>
+          <h2>Let's Start a <span class="accent">Conversation</span></h2>
+          <p>Have a project in mind? We’re here to help you make it a reality—reach out today.
+
+</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Pokhara-11,Phoolbari</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>Creative@AnuDesigns.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>+977(9867665377)</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <form class="contact-form">
+            <div class="form-group">
+              <input type="text" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" placeholder="Subject">
+            </div>
+            <div class="form-group">
+              <textarea id="message" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section-about">
+          <div class="accent" style="font-size: 30px; font-weight: bold;">Anu<span class="accent">Designs</span></div>
+          <p>Delivering impactful digital solutions through creativity, strategy, and technology.</p>
+          <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> Creative@AnuDesigns.com</p>
+            <p><i class="fas fa-phone"></i> +977(9867665377)</p>
+          </div>
+        </div>
+        <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section services-links">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">UI/UX Design</a></li>
+            <li><a href="#">Mobile Apps</a></li>
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">E-commerce</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 AnuDesigns. All Rights Reserved</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-scroll-top">
+        <a href="#" id="scrollToTop"><i class="fas fa-chevron-up"></i></a>
+      </div>
+    </div>
+  </footer>
 
   <script src="scrippt.js"></script>
 </body>
+
 </html>
